@@ -1,0 +1,53 @@
+/* CSS for ContactCard component */
+.contact-card {
+    width: 250px;
+    background-color: var(--Second-Color);
+    border: 1px solid var(--Third-Color);
+    padding: 20px;
+    margin: 8px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: #ddd;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  .contact-card:hover{
+    transform: translateY(-5px);
+  }
+
+  .contact-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .contact-card h2 {
+    font-size: 20px;
+    color: #ddd;
+  }
+
+  .contact-card p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: var(--Third-Color)
+
+  }
+
+  /* CSS for Contacts component */
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .contact-title{
+    font-size: 35px;
+    font-family: var(--font-family);
+    text-align: center;
+    color: var(--Third-Color);
+  }

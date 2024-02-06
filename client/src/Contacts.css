@@ -1,0 +1,27 @@
+.contact-title {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .contact-card {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+  }
+  
+  .contact-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  

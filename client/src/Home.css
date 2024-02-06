@@ -1,0 +1,81 @@
+/* Home.css */
+
+/* Video styles */
+.home-video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+  }
+  
+  /* Content styles */
+  .content-container {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Title styles */
+  .home-title {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+  }
+  
+  /* Subtitle styles */
+  .home-subtitle {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  /* Description styles */
+  .home-description {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+  /* Explore button styles */
+  .explore-button {
+    background-color: #82C91E;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .explore-button:hover {
+    background-color: #609C13;
+  }
+  /* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    /* Adjust padding for smaller screens */
+    .content-container {
+        padding: 15px;
+    }
+
+    /* Adjust font size for smaller screens */
+    .home-title {
+        font-size: 2em;
+    }
+
+    .home-subtitle {
+        font-size: 1.2em;
+    }
+
+    .home-description {
+        font-size: 1em;
+    }
+
+    .explore-button {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+}
