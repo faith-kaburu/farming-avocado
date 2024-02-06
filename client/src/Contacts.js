@@ -24,7 +24,7 @@ const ContactCard = ({ contact }) => {
 const Contacts = () => {
   return (
     <div>
-      <h1 className="contact-title">Meet the Team that Makes the Dream Work</h1>
+      <h1 className="contact-title">Meet the Dream Team that Makes your Dream a Reality </h1>
       <div className="contacts">
         {contacts.map((contact) => (
           <ContactCard key={contact.id} contact={contact} />

@@ -7,7 +7,7 @@ const Footer = () => {
     <footer style={footerStyle}>
       <div style={branding}>
         <h2 style={brandingText}>Farm Fresh Avocados</h2>
-        <p style={brandingDescription}>Connecting you with the finest avocados from passionate farmers.</p>
+        <p style={brandingDescription}>Connecting you with the finest quality avocados from passionate farmers.</p>
       </div>
       <div style={socialMediaStyle}>
         <a href="https://www.facebook.com"><FaFacebook size={20} /></a>
