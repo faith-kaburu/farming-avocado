@@ -4,8 +4,8 @@ const contacts = [
   {
     id: 1,
     name: "Faith Kaburu",
-    image: "https://i.pinimg.com/236x/d7/4f/da/d74fda5f6ff2020d7633e07dc8733edf.jpg",
-    details: "FullStack software engineer",
+    image: "https://i.pinimg.com/236x/4a/94/0d/4a940dc9d8d9ced85dd631167f97e5d7.jpg",
+    details: "FullStack Software Engineer",
     contact: "0712778935"
   },
 ];

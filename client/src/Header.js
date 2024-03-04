@@ -1,8 +1,14 @@
-import React from "react";
-import { Link } from 'react-router-dom';
-import './Header.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <section className="h-wrapper">
       <div className="h-container">
@@ -11,15 +17,22 @@ const Header = () => {
           alt="jpg"
           width={100}
         />
-        <div className="h-menu">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contacts">Contact us</Link>
-          <Link to="/bookings">Bookings</Link>
-          <button className="button">
-            <Link to="/contacts">Contact</Link> {/* Corrected link to Contacts page */}
+        <nav className={`h-menu ${isMenuOpen ? "open" : ""}`}>
+          <button className="menu-icon" onClick={toggleMenu}>
+            <div className="bar" />
+            <div className="bar" />
+            <div className="bar" />
           </button>
-        </div>
+          <div className="menu-links">
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contacts">Contact us</Link>
+            <Link to="/bookings">Bookings</Link>
+            <button className="button">
+              <Link to="/contacts">Contact</Link> {/* Corrected link to Contacts page */}
+            </button>
+          </div>
+        </nav>
       </div>
     </section>
   );

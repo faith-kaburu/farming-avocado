@@ -1,83 +1,39 @@
-/* CSS Reset for cross-browser consistency */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .about {
-    padding: 20px;
-    background-color: black;
-    color: green;
-  }
-  
-  .about-title {
-    text-align: center;
-    font-size: 2em;
-  }
-  
-  .split-about {
-    display: flex;
-    flex-wrap: wrap; /* Ensure a responsive layout on smaller screens */
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .left-aboutsection {
-    flex: 1;
-    margin-bottom: 20px;
-  }
-  
-  .about-card {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 8px;
-  }
-  
-  .about-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px 8px 0 0; /* Add rounded corners to the top */
-  }
-  
-  .about-text {
-    padding: 20px;
-    background-color: darkgreen;
-    border: 1px solid #333;
-    border-radius: 8px;
-    color: white;
-    margin-bottom: 20px;
-  }
-  
-  /* Style the avocado container */
-  .avocado-container {
-    background-color: #82C91E;
-    padding: 10px;
-    color: white;
-    border-radius: 4px;
-  }
-  
-  /* Style the navigation link */
-  .back-link {
-    display: block;
-    margin-top: 20px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
-  
-  /* Responsive styles for mobile */
-  @media (max-width: 768px) {
-    .split-about {
-      flex-direction: column;
-    }
-  }
-  
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust this value as needed */
+  background-image: url('https://i.pinimg.com/564x/30/b3/0d/30b30d7a09b3e966cb13908d9b59cf70.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white; /* Change this to your desired text color */
+}
+
+.about-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text {
+  max-width: 50%;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Change the opacity as needed */
+}
+
+.split-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-aboutsection,
+.right-aboutsection {
+  flex: 1;
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
+}

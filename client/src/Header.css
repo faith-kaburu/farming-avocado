@@ -1,62 +1,101 @@
 /* Header.css */
 
 .h-wrapper {
-    background-color: green;
-    padding: 10px;
+  background-color: green;
+  padding: 10px;
 }
 
 .h-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .h-menu {
-    display: flex;
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black; /* Change the bar color to black */
+  margin: 3px 0;
+  transition: transform 0.3s ease;
+}
+
+.menu-links {
+  display: flex;
 }
 
 .h-menu a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 15px;
-    transition: color 0.3s ease;
+  color: #0c0b0b;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: color 0.3s ease;
 }
 
 .h-menu a:hover {
-    color: #82C91E;
+  color: #263f02;
 }
 
 .button {
-    background-color: #82C91E;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: #82c91e;
+  color: #080808;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .button a {
-    color: #fff;
-    text-decoration: none;
+  color: #0c0b0b;
+  text-decoration: none;
 }
 
 .button:hover {
-    background-color: #609C13;
+  background-color: #609c13;
 }
 
 @media (max-width: 768px) {
-    .h-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .h-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .h-menu {
-        width: 100%;
-        margin-top: 10px;
-    }
+  .h-menu {
+    width: 100%;
+    margin-top: 10px;
+  }
 
-    .h-menu a {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
+  .h-menu a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .menu-links {
+    display: none;
+  }
+
+  .h-menu.open .menu-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .menu-icon .bar {
+    background-color: #0a0e04; /* Change the bar color to green */
+  }
 }
